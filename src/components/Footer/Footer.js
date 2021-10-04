@@ -2,7 +2,14 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+
 const Footer = () => {
+    const mapIcon = <FontAwesomeIcon icon={faMapMarkerAlt} />
+    const phoneIcon = <FontAwesomeIcon icon={faPhoneAlt} />
+    const emailIcon = <FontAwesomeIcon icon={faEnvelope} />
     return (
         <Container className="my-3">
             <Row>
@@ -48,9 +55,9 @@ const Footer = () => {
                 </Col>
                 <Col xs={6} md={4}>
                     <h5>Contact Info</h5>
-                    <h6>Address: 15, Hazi Tower, Satarkul Bridge, North Badda, Dhaka.</h6>
-                    <h6>Phone: +88 01234-567890</h6>
-                    <h6>Email: info@eschool.com</h6>
+                    <h6>{mapIcon} 15, Hazi Tower, Satarkul Bridge, North Badda, Dhaka.</h6>
+                    <h6>{phoneIcon} +88 01234-567890</h6>
+                    <h6>{emailIcon} info@eschool.com</h6>
 
                 </Col>
             </Row>

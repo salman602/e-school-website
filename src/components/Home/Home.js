@@ -18,7 +18,7 @@ const Home = () => {
                     <Col></Col>
                 </Row>
 
-                <Row xs={1} md={2} className="g-4 py-md-4 py-sm-3">
+                <Row xs={2} md={4} className="g-4 py-md-4 py-sm-3">
                     {
                         courses.slice(0, 4).map(course => <Course
                             key={course.id}
