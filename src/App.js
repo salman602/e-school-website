@@ -7,6 +7,7 @@ import './App.css';
 import About from './components/About/About';
 import Blogs from './components/Blogs/Blogs';
 import Contact from './components/Contact/Contact';
+import CourseDetails from './components/CourseDetails/CourseDetails';
 import Courses from './components/Courses/Courses';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/courses">
             <Courses></Courses>
+          </Route>
+          <Route path="/course/:id">
+            <CourseDetails></CourseDetails>
           </Route>
           <Route path="/blogs">
             <Blogs></Blogs>

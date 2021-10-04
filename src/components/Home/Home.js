@@ -5,7 +5,7 @@ import Course from '../Course/Course';
 
 const Home = () => {
     const [courses, setCourses] = useCourses([])
-    console.log(courses);
+    // console.log(courses);
     return (
         <div style={{ backgroundColor: '#e6e6ee' }}>
             <Container>

@@ -29,3 +29,7 @@
     border-left: 3px solid #45e0de;
     padding-left: 1rem;
 }
+
+.about-content p{
+    line-height: 30px;
+}
