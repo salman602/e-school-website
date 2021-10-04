@@ -1,0 +1,23 @@
+.custom-bg{
+    background-color: #c0f0ef;
+}
+
+.menu{
+    text-decoration: none;
+    color: #222;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: transperant;
+    padding: 0 8px;
+    margin: 0 8px;
+}
+
+.menu:hover{
+    color: #111;
+    font-weight: 500;
+}
+
+button{
+    border: 1px solid transparent;
+    border-radius: 30%;
+}

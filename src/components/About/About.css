@@ -1,0 +1,31 @@
+.about-section{
+    background-image: url(../../images/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+    position: relative;
+    
+    z-index: 9;
+    background-attachment: fixed;
+}
+.about-section::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: -1;
+}
+.about-content{
+    color: #fafafa;
+    z-index: 1;
+    padding: 4.4rem 0;
+}
+
+.about-item{
+    border-left: 3px solid #45e0de;
+    padding-left: 1rem;
+}
