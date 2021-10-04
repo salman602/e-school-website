@@ -7,18 +7,21 @@ import useCourses from '../../hooks/useCourses';
 
 
 const CourseDetails = () => {
+    // getting dynamic url with useParams
     const { id } = useParams();
-    // console.log(id)
-    const [courses, setCourses] = useCourses([]);
 
+    // Receving data from custom hook
+    const [courses] = useCourses([]);
+
+    // declear state for storing updated data
     const [singleCourse, setSingleCourse] = useState({})
 
+    // checking condition using Array.find method inside useEffect with dependencys.
     useEffect(() => {
         const foundCourse = courses?.find((course) => course?.id === Number(id));
         setSingleCourse(foundCourse);
     }, [courses, id]);
 
-    // const { title, description, price, seats } = singleCourse;
     return (
         <div style={{ backgroundColor: '#fafafa' }}>
             <Container className="py-4">
@@ -37,10 +40,6 @@ const CourseDetails = () => {
                             </Card.Body>
                             <Card.Footer className="text-muted">Total Seats: {singleCourse?.seats}</Card.Footer>
                         </Card>
-                        {/* <h5>title: {title}</h5>
-                    <p>Description: {description}</p>
-                    <p>Price: ${price}</p>
-                    <p>Seat Available: {seats}</p> */}
                     </Col>
                     <Col></Col>
                 </Row>

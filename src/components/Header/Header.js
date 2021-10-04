@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
@@ -34,8 +33,6 @@ const Header = () => {
                         <NavLink className="menu" to="/contact" activeClassName="selected">
                             Contact Us
                         </NavLink>
-
-
                     </Nav>
 
                     <button className="btn btn-outline-info rounded-pill text-black">Sign in</button>

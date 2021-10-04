@@ -1,8 +1,6 @@
 //  import React-bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
-
 import './App.css';
 import About from './components/About/About';
 import Blogs from './components/Blogs/Blogs';
@@ -17,7 +15,6 @@ import NotFound from './components/NotFound/NotFound';
 function App() {
   return (
     <div>
-
       <Router>
         <Header />
         <Switch>

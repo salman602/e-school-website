@@ -4,7 +4,8 @@ import useCourses from '../../hooks/useCourses';
 import Course from '../Course/Course';
 
 const Courses = () => {
-    const [courses, setCourses] = useCourses([])
+    // Receiving data from custom hook
+    const [courses] = useCourses([])
     return (
         <Container>
             <Row xs={1} md={3} className="g-4 py-md-4 py-sm-3">

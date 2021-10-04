@@ -1,12 +1,12 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 
 const Footer = () => {
+    // Font awesome icon storing in a variable
     const mapIcon = <FontAwesomeIcon icon={faMapMarkerAlt} />
     const phoneIcon = <FontAwesomeIcon icon={faPhoneAlt} />
     const emailIcon = <FontAwesomeIcon icon={faEnvelope} />

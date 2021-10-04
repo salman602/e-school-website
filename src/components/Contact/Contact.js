@@ -11,7 +11,7 @@ const Contact = () => {
                         <h4>Address Info</h4>
                         <p>Feel free to talk to our online representative at any time you please using our Live Chat system on our website or one of the below instant messaging programs.</p>
                         <p>Please be patient while waiting for response.</p>
-                        <span>Phone General Inquiries: +88 01234-567890</span>
+                        <span><b>Phone General Inquiries: +88 01234-567890</b></span>
                     </div>
                 </Col>
                 <Col xs={12} md={8}>

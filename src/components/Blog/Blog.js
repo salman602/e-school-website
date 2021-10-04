@@ -3,6 +3,7 @@ import { Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Blog = (props) => {
+    // destructuring
     const { img, title, lecturer, description } = props.course;
     return (
         <Card className="my-3">

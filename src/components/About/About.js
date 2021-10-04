@@ -13,9 +13,6 @@ const About = () => {
                     </div>
                 </Container>
             </div>
-            {/* <Container>
-
-            </Container> */}
         </div>
     );
 };

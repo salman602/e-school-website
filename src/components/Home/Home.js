@@ -4,8 +4,8 @@ import useCourses from '../../hooks/useCourses';
 import Course from '../Course/Course';
 
 const Home = () => {
-    const [courses, setCourses] = useCourses([])
-    // console.log(courses);
+    // Receving data from custom hook
+    const [courses] = useCourses([]);
     return (
         <div style={{ backgroundColor: '#e6e6ee' }}>
             <Container>

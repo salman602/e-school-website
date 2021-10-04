@@ -4,16 +4,16 @@ import useCourses from '../../hooks/useCourses';
 import Blog from '../Blog/Blog';
 
 const Blogs = () => {
-    const [courses, setCourses] = useCourses([])
+    // Receiving data from custom hook
+    const [courses] = useCourses([]);
     return (
         <div>
             <Container className="py-4">
 
                 {
-                    courses.map(course => <Blog className="my-3"
+                    courses.map(course => <Blog
                         key={course.id}
                         course={course}
-
                     ></Blog>)
                 }
 

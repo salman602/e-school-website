@@ -1,10 +1,12 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 
 const NotFound = () => {
     return (
         <div>
-            <h3>Error 404. Page Not Found.</h3>
-            <p>Development in progress.</p>
+            <Container className="text-center py-3 bg-danger">
+                <h3>Error 404!! Page you are looking for is currently not found.</h3>
+            </Container>
         </div>
     );
 };

@@ -4,8 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './Course.css'
 
 const Course = (props) => {
-
-
+    // destructuring
     const { id, img, title, lecturer, price, seats } = props.course;
     return (
         <Col>
@@ -20,7 +19,6 @@ const Course = (props) => {
                         Enroll Course
                     </NavLink>
                 </Card.Body>
-
             </Card>
         </Col>
     );
