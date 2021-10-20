@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import Direction from '../Direction/Direction';
+// import Map from '../Map/Map';
 import './About.css'
 
 const About = () => {
@@ -13,6 +15,10 @@ const About = () => {
                     </div>
                 </Container>
             </div>
+            <Container className="my-3">
+                {/* <Map></Map> */}
+                <Direction></Direction>
+            </Container>
         </div>
     );
 };
