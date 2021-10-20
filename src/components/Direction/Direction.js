@@ -9,9 +9,7 @@ const location = {
 };
 
 const Direction = () => {
-
     const [response, setResponse] = useState(null);
-
     const directionsCallback = (res) => {
         if (res !== null) {
             setResponse(res)
